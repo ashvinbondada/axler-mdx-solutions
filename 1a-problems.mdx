@@ -2,6 +2,7 @@ import 'katex/dist/katex.min.css';
 
 # 1A. $R^n$ and $C^n$
 
+
 ## 1. Show that $\alpha + \beta = \beta + \alpha$ for all $\alpha, \beta \in \mathbb{C}$
 
 Let  
@@ -134,3 +135,129 @@ Thus, $\beta$ exists and is **unique**.
 \[
 \checkmark
 \]
+
+## 7.
+
+We check that $\frac{-1 + \sqrt{3}i}{2}$ is a cube root of 1 by cubing it and verifying that the value is 1.
+
+$$
+\left( \frac{-1 + \sqrt{3}i}{2} \right) \left( \frac{-1 + \sqrt{3}i}{2} \right) = \frac{-1 - \sqrt{3}i}{2}
+$$
+
+$$
+\left( \frac{-1 - \sqrt{3}i}{2} \right) \left( \frac{-1 + \sqrt{3}i}{2} \right) = 1
+$$
+
+## 8.
+Let:
+
+\[
+z = x + yi
+\]
+where \( x, y \in \mathbb{R} \)
+
+Compute:
+
+\[
+z^2 = (x + yi)^2 = x^2 - y^2 + 2xyi
+\]
+
+We require:
+
+\[
+z^2 = 0 + 1i
+\]
+
+### Equating parts:
+
+1. \( x^2 - y^2 = 0 \)  
+2. \( 2xy = 1 \)
+
+---
+
+### From (1):
+
+\[
+x^2 = y^2 \quad \Rightarrow \quad y = \pm x
+\]
+
+---
+
+## Case 1: \( y = x \)
+
+Substitute into (2):
+
+\[
+2x^2 = 1 \quad \Rightarrow \quad x^2 = \frac{1}{2}
+\]
+\[
+x = \pm \frac{\sqrt{2}}{2}
+\]
+
+Thus:
+
+\[
+y = \pm \frac{\sqrt{2}}{2}
+\]
+
+So one solution is:
+
+\[
+z = \frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}i
+\]
+
+---
+
+## Case 2: \( y = -x \)
+
+Substitute into (2):
+
+\[
+2x(-x) = 1 \quad \Rightarrow \quad -2x^2 = 1 \quad \Rightarrow \quad x^2 = -\frac{1}{2}
+\]
+
+No real solution here since \( x \in \mathbb{R} \).
+
+---
+
+## Final Solutions:
+
+Thus, the only two roots are:
+
+\[
+z = \frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}i
+\]
+\[
+z = -\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2}i
+\]
+
+
+## 9
+$(4, -3, 1, 7) + 2x = (5, 9, -6, 8)$
+$2x = (1, 12, -7, 1)$
+$x = (\frac{1}{2}, 6, \frac{-7}{2}, \frac{1}{2})$
+
+## 10
+
+The scaling factor $\lambda$ applies uniformly to all components,  
+so the ratios between the corresponding components must be the same —which in this case they are **not**.  
+Thus, no such $\lambda$ exists.
+
+In other words, looking at the first component:
+
+$$
+\lambda = \frac{12 - 5i}{2 - 3i}
+$$
+
+If we apply this $\lambda$ to the second component:
+
+$$
+\lambda \times (5 + 4i) = \frac{12 - 5i}{2 - 3i} \times (5 + 4i)
+$$
+
+This does not equal $7 + 22i$.
+
+Therefore, we have a contradiction,  
+and **no such $\lambda$ exists**.
+
+
