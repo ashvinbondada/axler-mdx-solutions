@@ -1,66 +1,237 @@
 ---
-title: 'The Legacy of Ferrari: Power, Speed, and Elegance'
-tags: ['cars', 'ferrari', 'formula-1']
+title: '1A. $R^n$ and $C^n$'
+tags: []
+---
+### 1
+Let  
+$\alpha = a + bi$  
+$\beta = c + di$  
+where $a, b, c, d \in \mathbb{R}$
+
+$$
+\alpha + \beta = (a + c) + (b + d)i
+$$
+$$
+\beta + \alpha = (c + a) + (d + b)i
+$$
+
+Since addition in $\mathbb{R}$ is commutative:
+
+$$
+\alpha + \beta = \beta + \alpha \quad
+$$
+
+-- 
+
+### 2
+
+Let  
+$\alpha = a + bi$  
+$\beta = c + di$  
+where $a, b, c, d \in \mathbb{R}$
+
+$$
+\alpha + \beta = (a + c) + (b + d)i
+$$
+$$
+\lambda(\alpha + \beta) = \lambda(a + c) + \lambda(b + d)i = (\lambda a + \lambda c) + (\lambda b + \lambda d)i = \lambda \alpha + \lambda \beta \quad 
+$$
+
 ---
 
-```ts
-const sum = (num1: number, num2: number): number => {
-    return num1 + num2
-}
+### 3
+Let  
+$\alpha = a + bi$  
+$\beta = c + di$  
+where $a, b, c, d \in \mathbb{R}$
 
-console.log(sum(4,8)) //12
-```
+**Compute $\alpha (\lambda \beta)$:**
+$$
+\alpha(\lambda \beta) = (a + bi)(\lambda c + \lambda di) = a \lambda c + a \lambda di + b i \lambda c + b i \lambda di
+$$
+$$
+= \lambda(ac - bd) + \lambda(ad + bc)i
+$$
 
-# The Legacy of Ferrari: Power, Speed, and Elegance
+Similarly,
+**Compute $\lambda(\alpha \beta)$:**
+$$
+\lambda(\alpha \beta) = \lambda(ac - bd) + \lambda(ad + bc)i
+$$
 
-When it comes to luxury sports cars, few names are as iconic as **Ferrari**. Synonymous with speed, performance, and an uncompromising dedication to design, Ferrari has captured the hearts of car enthusiasts and collectors worldwide. But what makes Ferrari so special? Let’s explore the legacy of this automotive legend.
+Thus:
 
-## The Origins of Ferrari
+$$
+\alpha(\lambda \beta) = \lambda(\alpha \beta) \quad 
+$$
 
-Ferrari's story began in 1939 when **Enzo Ferrari** founded the company in **Maranello, Italy**. Initially focused on creating race cars, Ferrari didn’t produce its first road car until 1947, when the **Ferrari 125 S** was introduced. Powered by a 1.5 L V12 engine, the 125 S set the stage for Ferrari’s focus on high-performance engines, making its mark in both motorsports and luxury automotive markets.
+--
 
-### Enzo Ferrari’s Vision
+### 4
+Let  
+$\alpha = a + bi$  
+$\beta = c + di$
 
-Enzo Ferrari had one mission: to create cars that could dominate on the racetrack while captivating the imagination of car lovers around the world. His passion for racing was evident in every car the company produced. Even today, **Formula 1** racing is synonymous with Ferrari, and the brand continues to push the limits of what’s possible on the track.
+$$
+\lambda(\alpha + \beta) = \lambda((a + c) + (b + d)i) = \lambda a + \lambda c + (\lambda b + \lambda d)i = \lambda \alpha + \lambda \beta \quad 
+$$
 
-## Ferrari in Formula 1
+--
 
-Ferrari holds a legendary place in **Formula 1** racing. As one of the most successful teams in F1 history, Ferrari has won more **Constructors' Championships** than any other team. Ferrari’s **Scuderia Ferrari** racing division has seen legendary drivers such as:
+### 5
+Let $\alpha = a + bi$
 
-- **Michael Schumacher**: Seven-time world champion.
-- **Niki Lauda**: Three-time world champion.
-- **Kimi Räikkönen**: 2007 world champion with Ferrari.
+Define $\beta = -\alpha = -a - bi$  
+Then:
 
-### The Ferrari Formula 1 Car
+$$
+\alpha + \beta = (a + bi) + (-a - bi) = 0
+$$
 
-The **Ferrari SF90**, **F2004**, and other F1 cars have set the bar for technological innovation, blending cutting-edge aerodynamics with raw power. Ferrari’s commitment to excellence in F1 has not only earned them championship titles but also driven technological advancements that translate to their road cars.
+Thus, such $\beta$ exists.
 
-## Iconic Ferrari Road Cars
+**Uniqueness:**
 
-While Ferrari’s racing pedigree is unmatched, its road cars are equally captivating. Ferrari has produced some of the most iconic supercars in automotive history. Here are just a few models that have left their mark:
+Suppose $\gamma$ also satisfies $\alpha + \gamma = 0$.  
+Then $\gamma = -\alpha = \beta$ by the **definition of additive inverse**, which is **unique**.  
 
-### Ferrari 250 GTO (1962)
+--
 
-The **Ferrari 250 GTO** is often considered one of the greatest Ferraris ever made. With only **36 units** produced, it’s an extremely rare collector's item. Powered by a **3.0 L V12 engine**, the 250 GTO was designed for both the road and the track, winning multiple international racing titles.
+### 6
+Let $\alpha = a + bi$, with $a, b \in \mathbb{R}$ and $\alpha \neq 0$.
 
-### Ferrari F40 (1987)
+By definition, $\frac{1}{\alpha}$ denotes the **unique** multiplicative inverse of $\alpha$, meaning:
 
-Celebrating Ferrari’s 40th anniversary, the **F40** was a no-compromise supercar designed with performance in mind. It was the first production car to break the **200 mph** barrier, thanks to its twin-turbocharged V8 engine. Even today, the F40 remains one of the most revered Ferraris ever made.
+$$
+\alpha \left( \frac{1}{\alpha} \right) = 1
+$$
 
-### Ferrari LaFerrari (2013)
+**Explicit expression:**
 
-The **LaFerrari** is Ferrari’s hybrid hypercar, showcasing the brand’s innovation in the modern era. With a **6.3 L V12 engine** paired with an electric motor, it produces a combined **950 horsepower**. The LaFerrari demonstrates Ferrari’s ability to blend performance with cutting-edge technology.
+$$
+\frac{1}{a + bi} = \frac{a - bi}{a^2 + b^2} = \frac{a}{a^2 + b^2} - \frac{b}{a^2 + b^2}i
+$$
 
-## The Ferrari Driving Experience
+Thus, $\beta$ exists and is **unique**.
 
-Owning a Ferrari isn’t just about owning a car; it’s about embracing a lifestyle. The experience of driving a Ferrari is described as visceral, offering unparalleled handling, acceleration, and engine sound. Ferrari’s design philosophy ensures that the driver feels connected to the road, with a focus on precision engineering.
+--
 
-Whether it’s the roar of the engine or the feel of the steering wheel, Ferrari creates an emotional connection between the car and its driver that is hard to replicate.
+### 7
+We check that $\frac{-1 + \sqrt{3}i}{2}$ is a cube root of 1 by cubing it and verifying that the value is 1.
 
-## Ferrari’s Future
+$$
+\left( \frac{-1 + \sqrt{3}i}{2} \right) \left( \frac{-1 + \sqrt{3}i}{2} \right) = \frac{-1 - \sqrt{3}i}{2}
+$$
 
-As the automotive industry moves toward **electric vehicles** and **sustainability**, Ferrari has been adapting to the times. The release of the **Ferrari SF90 Stradale**, Ferrari’s first plug-in hybrid, marks the beginning of a new chapter in the company’s history. However, Ferrari has been clear: even with electric power, the focus will always remain on performance, passion, and luxury.
+$$
+\left( \frac{-1 - \sqrt{3}i}{2} \right) \left( \frac{-1 + \sqrt{3}i}{2} \right) = 1
+$$
 
-## Conclusion
+--
 
-Ferrari’s legacy is built on a foundation of speed, power, and elegance. From the race tracks of Formula 1 to the streets of cities around the world, Ferrari represents the pinnacle of automotive engineering and design. As they continue to evolve with the future, one thing remains certain: **Ferrari is not just a car—it’s an icon**.
+### 8
+
+Let:
+$z = x + yi$
+$ where \( x, y \in \mathbb{R} \) $
+
+Compute:
+
+$$
+z^2 = (x + yi)^2 = x^2 - y^2 + 2xyi
+$$
+
+We require:
+
+$$
+z^2 = 0 + 1i
+$$
+
+**Equating parts:**
+
+(1) $x^2 - y^2 = 0$
+
+(2) $2xy = 1$
+
+From (1):
+
+$$
+x^2 = y^2 \quad \Rightarrow \quad y = \pm x
+$$
+
+**Case 1: \( y = x \)**
+
+Substitute into (2):
+
+$$
+2x^2 = 1 \quad \Rightarrow \quad x^2 = \frac{1}{2}
+$$
+$$
+x = \pm \frac{\sqrt{2}}{2}
+$$
+
+Thus:
+
+$$
+y = \pm \frac{\sqrt{2}}{2}
+$$
+
+So one solution is:
+
+$$
+z = \frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}i
+$$
+
+**Case 2: \( y = -x \)**
+
+Substitute into (2):
+
+$$
+2x(-x) = 1 \quad \Rightarrow \quad -2x^2 = 1 \quad \Rightarrow \quad x^2 = -\frac{1}{2}
+$$
+
+No real solution here since \( x \in \mathbb{R} \).
+
+**Final Solutions:**
+
+Thus, the only two roots are:
+
+$$
+z = \frac{\sqrt{2}}{2} + \frac{\sqrt{2}}{2}i
+$$
+$$
+z = -\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2}i
+$$
+
+
+-- 
+
+### 9
+
+$(4, -3, 1, 7) + 2x = (5, 9, -6, 8)$
+$2x = (1, 12, -7, 1)$
+$x = (\frac{1}{2}, 6, \frac{-7}{2}, \frac{1}{2})$
+
+--
+
+### 10
+The scaling factor $\lambda$ applies uniformly to all components,  
+so the ratios between the corresponding components must be the same —which in this case they are **not**.  
+Thus, no such $\lambda$ exists.
+
+In other words, looking at the first component:
+
+$$
+\lambda = \frac{12 - 5i}{2 - 3i}
+$$
+
+If we apply this $\lambda$ to the second component:
+
+$$
+\lambda \times (5 + 4i) = \frac{12 - 5i}{2 - 3i} \times (5 + 4i)
+$$
+
+This does not equal $7 + 22i$.
+
+Therefore, we have a contradiction,  
+and **no such $\lambda$ exists**.
